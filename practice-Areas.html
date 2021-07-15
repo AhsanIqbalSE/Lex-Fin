@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <title>Document</title>
+</head>
+<body>
+ 
+      <!--this section is for cover-->
+      <section>
+        <div class="services-cover">
+            <!-- mini-header -->
+                <div class="container">
+                    <div class=" mini-header">
+                        <div class="row ml-0 mr-0">
+                            <div class="header-contact col-sm-9 d-flex">
+                                <div class="miniheader-email">
+                                    <p><a href="mailto:someone@example.com"><i class="far fa-envelope mr-2"></i> abcd@gmail.com</a></p>
+                                </div>
+                        
+                                <div class="miniheader-email ml-3">
+                                    <p><a href="tel:021123456"><i class="fa fa-phone fa-flip-horizontal mr-2"></i>021123456</a></p>
+                                </div>
+                            </div>      
+                            <div class="col-3 mini-header-icon-sm-remove">
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- <div class="main-header">
+                    
+                </div> -->
+                <!-- navbar -->
+            <section class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark" id="na">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo-custom max-w-190" src="./images/logo1.png" alt="">
+                    </a>
+
+                    <!--now we make toggle button-->
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                 
+                    <!--toggle button created-->
+                    <div class="collapse navbar-collapse nav-collapse-custom" id="collapse_target">
+                        <ul class="navbar-nav d-flex jc-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle color-white" data-toggle="dropdown" data-target="dr_target" href="#">Financial Service</a>
+                                <div class="dropdown-menu" aria-labelledby="dr_target">
+                                    <a class="dropdown-item" href="services.html#audit">Audit and Assurance Services</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="services.html#secretarial">Company Secretarial Services</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="services.html#Counsel">General Counsel Services-In-House Services</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="services.html#Overseas">Overseas Pakistani</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="services.html#Setting">Setting Up in Pakistan</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="services.html#Tax">Tax</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-white" id="signin_signout" href="./practice-Areas.html" >Practice Areas </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-white" href="index.html#aboutUs">About Us</a>
+                            </li>
+                            
+                           
+                            <li class="nav-item ">
+                                <a class="nav-link color-white" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="text-center mb-2">
+                            <button class="btn btn-outline-primary width-mc Chat-btn">Chat with an Advisor</button>
+                        </div>
+                    </div>
+
+                </nav>
+            </section>
+            
+            <section class="container">
+                <div class="row mr0 ml0 title-color mx0">
+                    <div class="col-lg-6">
+                        <h1 class="mx-auto mt-4">OUR PRACTICE AREAS AND FOCUS SECTOR</h1>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+    <!--cover section end-->
+
+        <!-- practice Area -->
+        <section class="container bg white my-5 second-sec">
+            <div class="row mx-0">
+                <div class="col-md-3 practice-area-list">
+                    <!-- only show small screen -->
+                    <nav class="navbar navbar-expand-lg navbar-dark practice-area-list-small" id="na">
+                        <!--now we make toggle button-->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_area" style="background-color: black;">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                     
+                        <!--toggle button created-->
+                        <div class="collapse navbar-collapse nav-collapse-custom" id="collapse_area">
+                            <ul class="navbar-nav  jc-center">
+                                <li><a href="#Litigation" class='secList color-white'>Litigation and Dispute Resolution</a></li>
+                                <div class="dropdown-divider m-0"></div>
+                                
+                                <li><a href="#Banking" class='secList color-white'>Banking, Finance & Regulatory</a></li>
+                                <div class="dropdown-divider m-0"></div>
+                                <li><a href="#Commercial" class='secList color-white'>Commercial & Corporate </a></li>
+                                <div class="dropdown-divider m-0"></div>
+                                <li><a href="#Public" class='secList color-white'>Public Private Partnership (PPP)</a></li>
+                                <div class="dropdown-divider m-0"></div>
+                                <li><a href="#Real" class='secList color-white'>Real Estate</a></li>
+                                <div class="dropdown-divider m-0"></div>
+                                <li><a href="#Intellectual" class='secList color-white'>Intellectual Property Rights (IPR)</a></li>
+                                <div class="dropdown-divider m-0"></div>
+                                <li><a href="#Information" class='secList color-white'>Information Technology</a></li>
+                                <div class="dropdown-divider m-0"></div>
+                                <li><a href="#Employment" class='secList color-white'>Employment </a></li>
+                                <div class="dropdown-divider m-0"></div>
+                                <li><a href="#Family" class='secList color-white'>Family Law</a></li>
+                                <div class="dropdown-divider m-0"></div>
+                                <li><a href="#Criminal" class='secList color-white'>Criminal Litigation</a></li>
+                                <div class="dropdown-divider m-0"></div>
+                                <li><a href="#Pro" class='secList color-white'>Pro Bono</a></li>
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                    <!-- practice area list -->
+                    <ul class="pl-0 practice-area-list-large">
+                        <li><a href="#Litigation" class='secList'>Litigation and Dispute Resolution</a></li>
+                        <li><a href="#Banking" class='secList'>Banking, Finance & Regulatory</a></li>
+                        <li><a href="#Commercial" class='secList'>Commercial & Corporate </a></li>
+                        <li><a href="#Public" class='secList'>Public Private Partnership (PPP)</a></li>
+                        <li><a href="#Real" class='secList'>Real Estate</a></li>
+                        <li><a href="#Intellectual" class='secList'>Intellectual Property Rights (IPR)</a></li>
+                        <li><a href="#Information" class='secList'>Information Technology</a></li>
+                        <li><a href="#Employment" class='secList'>Employment </a></li>
+                        <li><a href="#Family" class='secList'>Family Law</a></li>
+                        <li><a href="#Criminal" class='secList'>Criminal Litigation</a></li>
+                        <li><a href="#Pro" class='secList'>Pro Bono</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div id="Litigation" class="section my-3">
+                        <h5>Litigation and Dispute Resolution</h5>
+                        <p>Our primary goal is to help clients prevent litigation in Pakistan and actively promote arbitration for resolution of commercial disputes. Even in cases where litigation was chosen as an initial recourse, we have often explored ways of settling disputes through mediation and conciliation. Apart from litigating in various courts in Pakistan including Tribunals, and High Courts, our team has had extensive experience with ad-hoc as well as institutional arbitrations conducted by the relevant bodies. </p>
+                        <p>Some of the services rendered by the Litigation & Dispute Resolution practice group include:</p>
+                        <ul>
+                            <li>Civil litigation</li>
+                            <li>Writ litigation in High Courts of Pakistan</li>
+                            <li>Corporate and commercial dispute resolution</li>
+                            <li>Domestic and international arbitration</li>
+                            <li>Domestic mediation and conciliation</li>
+                            <li>Financial loan litigation</li>
+                            <li>Criminal litigation</li>
+                            <li>Family litigation</li>
+                        </ul>
+                    </div>
+
+                    <div id="Banking" class="section my-3">
+                        <h5>Banking, Finance & Regulatory</h5>
+                        <p>We have a robust and fast-growing corporate & commercial practice. We offer precise and apt guidance on corporate compliance and governance to a broad spectrum of enterprises, ranging from multinational organization to small-capitalization entities. Business transactions in a wide range of key industry sectors, such as, finance, energy, infrastructure, manufacturing, technology, life, telecommunications and media, are effectively handled by the Firm’s able lawyers.</p>
+                        <p>In addition to thought leadership on domestic and cross-border transactions, Lex and Fin maintains the integrity of client businesses by ensuring compliance with commercial laws. </p>
+                    </div>
+                    
+                    <div id="Commercial" class="section my-3">
+                        <h5>Commercial & Corporate </h5>
+                        <p>We have a robust and fast-growing corporate & commercial practice. We offer precise and apt guidance on corporate compliance and governance to a broad spectrum of enterprises, ranging from multinational organization to small-capitalization entities. Business transactions in a wide range of key industry sectors, such as, finance, energy, infrastructure, manufacturing, technology, life, telecommunications and media, are effectively handled by the Firm’s able lawyers.</p>
+                        <p>In addition to thought leadership on domestic and cross-border transactions, Lex and Fin maintains the integrity of client businesses by ensuring compliance with commercial laws. </p>
+
+                    </div>
+
+                    <div id="Public" class="section my-3">
+                        <h5>Public Private Partnership (PPP)</h5>
+                        <p>PPP involves a contract between a public sector and a private party, in which a government service or private business venture is funded by both the parties and executed through a partnership of public authority and private sector companies. A public- private partnership covers all types of collaborations between the public and private sectors, where public sector delivers policies, infrastructure etc.</p>
+                        <p>There are various types of public- private partnership</p>
+                        <ul>
+                            <li>Public Ownership and operation</li>
+                            <li>Quasi public agency</li>
+                            <li>Operations assistance</li>
+                            <li>Contract operations and maintenance</li>
+                            <li>Contracts operations and financing</li>
+                            <li>Design/ Build/ Operate</li>
+                            <li>Lease and Operate</li>
+                            <li>Joint Ownership</li>
+                            <li>Private Ownership</li>
+                        </ul>
+                        <p>The Firm advises both domestic and international players on the development and implementation of infrastructure projects. The members of the Firm have assisted clients in various projects including provincial governments, INGOs, and donors.</p>
+                        <p>The firm advises clients regarding:</p>
+                        <ul>
+                            <li>Drafting of bid documents</li>
+                            <li>Bid process management</li>
+                            <li>Due diligence of proposals</li>
+                            <li>Concession agreement</li>
+                            <li>Independent Expert and Independent Auditor agreements</li>
+                            <li>Dispute resolution</li>
+                        </ul>
+                    </div>
+
+                    <div id="Real" class="section my-3">
+                        <h5>Real Estate</h5>
+                        <p>Lex and Fin has created a dedicated team with the sole intent of advising various stakeholders (developers, investors, funds, and landowners) on legal and regulatory issues associated with real estate projects. The firm has engaged the services of some of the best real estate lawyers in Pakistan who possess extensive experience in matters relating to the construction and development of all sorts of projects whether commercial or residential.</p>
+                        <p>The property dispute lawyers of our real estate cell can be trusted to get sound advice on purchase, lease or license of property for residential, commercial or industrial purposes. They also assist clients in obtaining pre and post construction licenses, approvals, and permits for development of real estate projects. Our real estate lawyers help in minimizing the scope of dispute in property transactions by using their legal acumen to draft and review agreements for sale, conveyance deeds, lease deeds, leave & license agreements; power of attorney, indemnity deeds, guarantees etc.</p>
+                    </div>
+
+                    <div id="Intellectual" class="section my-3">
+                        <h5>Intellectual Property Rights (IPR)</h5>
+                        <p>The Firm provides comprehensive legal services pertaining to Intellectual Property. Our support extends to transaction assistance, prosecution and litigation related to areas that directly or indirectly touches upon IPR. These include trademarks, copyrights, patents, designs, trade secrets, domain names; anti-counterfeiting, infringement; publicity and celebrity rights; cyber and computer law; advertising and media law among others. The Firm also undertakes forensic audits of IPRs.</p>
+                    </div>
+
+                    <div id="Information" class="section my-3">
+                        <h5>Information Technology</h5>
+                        <p>The Firm works closely with the technology developers, service providers, consultants, and organization using critical technology to support and add value to their business. </p>
+                        <p>Services offered include:</p>
+                        <ul>
+                            <li>Legal audits and due diligence</li>
+                            <li>Drafting, reviewing and negotiating:</li>
+                            <ul>
+                                <li>Development, support, and maintenance agreements</li>
+                                <li>Licensing, reseller, and distribution agreements</li>
+                                <li>Outsourcing and services agreements</li>
+                                <li>Website design, hosting and maintenance agreements</li>
+                                <li>Service Level Agreements</li>
+                                <li>Website Terms & Conditions, Disclaimers, Privacy Policy, Cookies Policy etc.</li>
+                            </ul>
+                            <li>Advice on legal issues relating to email and internet risk management, data and systems security, data mining and data protection, digital signatures, hacking, and cyber crime</li>
+                            <li>Domain name registration and transfer</li>
+                            <li>Advice on legal issues relating to: e-commerce, and technology aspects of banking, financial services, and technology transfer projects.</li>
+                        </ul>
+                    </div>
+
+                    <div id="Employment" class="section my-3">
+                        <h5>Employment </h5>
+                        <p>We are providing advice and documentation to clients on a wide range of employment and labour law issues. Our range of services includes advising on relevant applicable Pakistan labour laws, regulatory requirements, mandated for employers, drafting and/ or reviewing of employment contracts and employee manuals. Our lawyers understand the importance of employment law issues, and how various labour laws and employment laws may impact your business. We provide you with strategic advice and documentation and assist you with effectively dealing with various employment law issues.</p>
+                        <p>We offer services:</p>
+                        <ul>
+                            <li>Reviewing and drafting employment agreements</li>
+                            <li>Reviewing and drafting personnel policy/ manuals</li>
+                            <li>Advising on applicable labour laws and employment law</li>
+                            <li>Advising on regulatory requirements mandated for employers</li>
+                            <li>Advising on termination strategy and retirement policies</li>
+                            <li>Conducting due diligence reviews of employment law compliance</li>
+                            <li>Advising on strategy and documentation for safeguarding confidential information and protecting intellectual property</li>
+                            <li>Advising on non-compete issues and their enforceability</li>
+                            <li>Litigation strategy</li>
+                        </ul>
+                    </div>
+
+                    <div id="Family" class="section my-3">
+                        <h5>Family Law</h5>
+                        <p>We deal family-related issues such as marriage, adoption, child abuse, divorce, khula, property settlements, alimony, court marriage, registration of marriage, polygamous marriages, parental responsibility, and succession. Family law is the term applied to the rules and laws developed regarding family relationships. Our lawyers are skilled in handling the myriad of issues facing families in Pakistan</p>    
+                    </div>
+
+                    <div id="Criminal" class="section my-3">
+                        <h5>Criminal Litigation</h5>
+                        <p>The Firm has extensive experience in representing clients in all type of Criminal matters in the courts of High Courts, District & Session Courts, Anti Terrorism Courts, Magistrates, F.I.A., NAB, and Tribunals.</p>
+                        <p>The Firm practices in the following areas of Criminal Litigation:</p>
+                        <ul>
+                            <li>Corporate Frauds</li>
+                            <li>White Collar Crimes</li>
+                            <li>Bank / Financial Institutions Frauds</li>
+                            <li>Dishonor of Cheques</li>
+                            <li>Quashing of FIRs/ Bails/ Trial</li>
+                            <li>Criminal Complaints</li>
+                            <li>Criminal Writs/ Revisions/ Appeals</li>
+                            <li>Defamation Cases</li>
+                        </ul>
+                    </div>
+
+                    <div id="Pro" class="section my-3">
+                        <h5>Pro Bono</h5>
+                        <p>We are providing pro bono services particularly to individuals and low income groups. We believe in giving back to the society which gave so much to us. We find immense happiness in sharing our wealth with the under-privileged and economically weaker sections of our society.  </p>
+                    </div>
+
+                </div>
+           </div>
+        </section>
+
+   <!-- footer -->
+   <footer class="py-5">   
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center-sm">
+                <a class="navbar-brand mb-4 " href="index.html">
+                    <img class="logo-custom max-w-190" src="./images/logo1.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h2>Location</h2>
+                <address class="font-weight-bold">Karachi</address>
+                <address>435 Wandering Ct. Suite 101. Sonoma, CA 93632</address>
+                <p><a href="./contact.html" class="light-blue text-underline hover-white">MAP</a></p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="services.html#audit">Audit and Assurance Services</a></li>
+                    <li><a href="services.html#secretarial">Company Secretarial Services</a></li>
+                    <li><a href="services.html#Counsel">General Counsel Services-In-House Services</a></li>
+                    <li><a href="services.html#Overseas">Overseas Pakistani</a></li>
+                    <li><a href="services.html#Setting">Setting Up in Pakistan</a></li>
+                    <li><a href="services.html#Tax">Tax</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="#practice">Practice Areas</a></li>
+                    <li><a href="#ourTeam">Meet Our Team</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="scrollTop" id="scTop" onclick="topFunction()"><i class="fas fa-arrow-up"></i></div>
+
+</body>
+<script>
+    $(function(){
+  $('.section').hide();
+  
+  $('.secList').on('click',function(){   
+    $('.section').not($($(this).attr('href'))).hide();
+    // フェードイン・アウトのアニメーション付で、表示・非表示を交互に実行
+    $($(this).attr('href')).fadeIn(800);
+    
+    // show を使うと、表示するだけ （ 同じボタンを何回押しても変わらない ）
+    // $($(this).attr('href')).show();
+  });
+});
+</script>
+<script>
+    // script for when click any area from index page it will show
+  
+    $(document).ready(function(){
+        if(window.location.hash){
+            var current_area = document.querySelectorAll(window.location.hash)[0].id
+            console.log(current_area);
+            document.getElementById(current_area).style.display="block"; 
+        }else{
+            document.getElementById('Litigation').style.display="block";
+        }
+    });
+</script>
+<script src="scrollTop.js"></script>
+
+</html>
