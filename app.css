@@ -1,4 +1,6 @@
 @font-face { font-family: "EB Garamond"; src: url('./fonts/EB_Garamond/static/EBGaramond-SemiBold.ttf'); } 
+@font-face { font-family: "roboto"; src: url('./Fonts/Roboto/Roboto-Regular.ttf'); } 
+
 html{
     scroll-behavior: smooth;
 }
@@ -10,6 +12,9 @@ h1{
 }
 h1,h2,h3,h4,h5{
     font-family: 'EB Garamond', serif;
+}
+p{
+    font-family: "roboto";
 }
 /* logo */
 .logo-custom{
@@ -128,6 +133,9 @@ h1,h2,h3,h4,h5{
     transition: all 0.8s;
     opacity: 0;
 }
+.bg-gray{
+    background-color: rgb(53, 52, 52);
+}
 
 
 .mx-auto {
@@ -135,7 +143,7 @@ h1,h2,h3,h4,h5{
 }
 
 .title-color h1 {
-    padding-top: 40px;
+    padding-top: 100px;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 55px;
@@ -441,6 +449,18 @@ footer ul li a:hover{
 .about-us-div button:focus{
     outline: none;
 }
+.moreless-button{
+    background-color: transparent;
+    color: black;
+    border: none;
+    text-decoration: underline;
+}
+.moreless-button:hover{
+    color: #04c2de;
+ }
+ .moreless-button:focus{
+     outline: none;
+ }
 .about-us-div p{
     color: rgba(255, 255, 255, 0.747)!important    
 }
@@ -453,8 +473,8 @@ footer ul li a:hover{
     display: none;
 }
 .bar{
-    border-bottom: 3px solid #04c2de;
-    width: 40px;
+    border-bottom: 4px solid #04c2de;
+    width: 50px;
     margin: auto;
 }
 /* pracice areas */
@@ -530,6 +550,7 @@ footer ul li a:hover{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-color: rgb(66, 64, 64);
         min-height: 350px;
     
 }
@@ -585,10 +606,15 @@ footer ul li a:hover{
     .logo-custom{
         width: 140px !important;
     }
+  
 }
 @media(max-width:992px){
-    .nav-collapse-custom{
-        background-color: black !important;
+    .nav-collapse-custom .dropdown-menu a{
+        /* background-color: black !important; */
+        white-space: normal !important;
+    }
+    .nav-collapse-custom .dropdown-menu {
+        position: absolute !important;
     }
     .logo-custom{
         width: 190px !important;
@@ -631,6 +657,25 @@ footer ul li a:hover{
     .text-center-sm{
         text-align: center;
     }
+    .blog-box {
+        padding:0px !important;
+        padding-top: 5px !important;
+    }
+    .blog-box p{
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .blog-box h3{
+       font-size: 24px;
+    }
+  
+    .blog-box .show-3-line{
+        overflow: hidden;
+        /* text-overflow: ellipsis; */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; 
+    }
 
 }
    
@@ -641,6 +686,24 @@ footer ul li a:hover{
     .chat-large-btn{
         font-size: 15px !important;
         padding: 20px 20px 20px 20px !important;
+    }
+    h1{
+        font-size: calc(1.6em + 1.5vmin) !important;
+    }
+    .title-color h1 {
+        padding-top: 40px;
+        
+    }
+    .private_qa {
+       
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 32px !important;
+       
+    }
+    .blog-pad-sm{
+        padding-right: 5px !important;
+        padding-left: 8px !important;
     }
 }
 i:hover{
@@ -658,3 +721,273 @@ i:hover{
     opacity: 1 !important;
 }
 /* clip-path: polygon(0 10%,100% 0%,100% 100%,0 100%); for curve in div */
+.bx-shadow{
+    box-shadow: 0 16px 32px rgb(42 54 52/10%), 0 8px 16px rgb(42 54 52 / 10%);
+}
+/* blog */
+.main_fordev {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    position: flex;
+}
+.main_fordev>h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    width: 90%;
+    font-size: 2.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mb24 {
+    margin-bottom: 24px;
+}
+.orange_bar {
+    display: block;
+    width: 80px;
+    height: 6px;
+    margin: 0px auto;
+    background: rgb(242, 114, 12);
+}
+.mb32 {
+    margin-bottom: 32px;
+}
+.fordev_title {
+    max-width: 40.5128rem;
+    width: 90%;
+    font-size: 1.30769rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px
+}
+.ppj {
+    max-width: 81.025641rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.public_qa {
+    flex-basis: 33.33333333%;
+    max-width: 22.5rem;
+    box-shadow: 0 4px 8px rgba(59, 64, 69, 0.2);
+    font-size: 1.15384615rem;
+    margin-top: 64px;
+    border-radius: 7px;
+    min-width: 15rem;
+    border-top: 5px solid black;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+.p32 {
+    padding: 32px;
+}
+.private_qa {
+    flex-basis: 33.33333333%;
+    max-width: 22.5rem;
+    box-shadow: 0 4px 8px rgba(59, 64, 69, 0.2);
+    font-size: 1.15384615rem;
+    border-radius: 7px;
+    margin-left: 64px;
+    margin-right: 64px;
+    min-width: 15rem;
+    margin-bottom: 50px;
+    border-top: 5px solid #04c2de;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+    font-family: "roboto";
+
+
+    
+}
+.private_qa p{
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; 
+}
+.public_qa p{
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; 
+}
+.job_qa {
+    flex-basis: 33.33333333%;
+    max-width: 22.5rem;
+    box-shadow: 0 4px 8px rgba(59, 64, 69, 0.2);
+    font-size: 1.15384615rem;
+    margin-top: 64px;
+    border-radius: 7px;
+    min-width: 15rem;
+    border-top: 5px solid black;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+.job_qa p{
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; 
+}
+.public_qa:hover {
+    box-shadow: 0 4px 8px 3px rgba(78, 81, 88, 0.2);
+}
+.private_qa:hover {
+    box-shadow: 0 4px 8px 3px rgba(78, 81, 88, 0.2);
+}
+.job_qa:hover {
+    box-shadow: 0 4px 8px 3px rgba(78, 81, 88, 0.2);
+}
+.mb16 {
+    margin-bottom: 16px;
+}
+.ppj h4 {
+    /* font-family: 'Roboto Slab', serif; */
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+.ppj p {
+    font-size: 16px;
+    /* font-family: 'roboto', sans-serif; */
+} 
+.bq {
+    padding: 12px 24px;
+    background-color: black;
+    color: #FFF;
+    border-radius: 3px;
+    font-family: 'Roboto', serif;
+    font-size: 16.5px;
+    display: inline-block
+}
+.tff {
+    padding: 12px 24px;
+    background-color: #04c2de !important;
+    color: #FFF;
+    border-radius: 3px;
+    font-family: 'Roboto', serif;
+    font-size: 16.5px;
+    display: inline-block
+}
+.fj {
+    padding: 12px 24px;
+    background-color: black;
+    color: #FFF;
+    border-radius: 3px;
+    font-family: 'Roboto', serif;
+    font-size: 16.5px;
+    display: inline-block
+}
+.bq:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+.fj:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+.tff:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+@media(max-width: 890px) {
+   
+    
+    .ppj {
+        flex-wrap: wrap;
+    }
+   
+    
+    .public_qa {
+        flex-basis: 316px;
+        max-width: 316px;
+        margin-bottom: 32px;
+        margin-top: 0;
+    }
+    
+    .private_qa {
+        flex-basis: 316px;
+        max-width: 316px;
+        /* min-width: 316px; */
+    }
+    
+    .job_qa {
+        flex-basis: 316px;
+        max-width: 316px;
+        margin-top: 0;
+    }
+    
+}
+/* blog-page */
+.fin-law-blog{
+    border-bottom: 2px solid rgb(158, 156, 156);
+}
+.blog-page{
+    background-color: #f3f4fa;
+}
+.blog-box{
+    padding: 15px;
+    background-color: white;
+}
+.blog-box h6{
+  color: #ca8e22;
+  font-weight: 800;
+}
+.show-3-line{
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; 
+}
+.blog-date{
+    color: gray;
+}
+.blog-date span{
+    color: #04c2de;
+    font-weight: 600;
+}
+.td-none{
+    text-decoration: none;
+    color: #212529;
+}
+.td-none:hover{
+    text-decoration: none;
+    color: #212529;
+}
+.blog-box-outer{
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    transition: all 0.3s;
+    
+}
+.blog-box-outer:hover{
+    box-shadow: 0 10px 20px rgb(0 0 0 / 20%)
+}

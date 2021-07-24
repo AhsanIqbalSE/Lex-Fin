@@ -566,3 +566,34 @@
       -o-animation-name: moveUp;
       animation-name: moveUp;
   }
+  /* blog */
+  
+.start {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: 0.5s all ease-in-out;
+}
+.end {
+    opacity: 1;
+    transform: translateX(0px);
+}
+.start1 {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.5s all ease-in-out;
+    transition-delay: 0.3s;
+}
+.end1 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.start2 {
+    opacity: 0;
+    transform: translateX(70px);
+    transition: 0.5s all ease-in-out;
+    transition-delay: 0.4s;
+}
+.end2 {
+    opacity: 1;
+    transform: translateX(0px);
+}
