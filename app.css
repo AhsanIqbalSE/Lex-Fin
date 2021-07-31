@@ -645,6 +645,12 @@ footer ul li a:hover{
     }    
     .practice-area-list li{
         padding: 0 10px;
+        margin: 0;
+    }
+    .practice-area-list-small .collapse{
+        background-color: black;
+        transition: all 0.3s;
+
     }
     .practice-area-list li a{
         font-size: 12px ;
@@ -1041,3 +1047,16 @@ i:hover{
 .nav-bg-color{
     background-color: #2d4142;
 }
+/* ppractice icon rotate */
+.icon-rotate{
+    transform: rotate(-180deg) !important;
+    transition: all 0.5s;
+}
+#rotate{
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+#rotatebtn{
+    outline: none;
+}
+
