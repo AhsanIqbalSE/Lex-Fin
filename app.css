@@ -572,7 +572,14 @@ footer ul li a:hover{
 .practice-area-list li:hover{
     border-left: 3px solid #069eb6;    
 }
+.practice-area-list li:active{
+    border-left: 3px solid #069eb6;    
+}
+.active-li{
+    border-left: 3px solid #069eb6 !important;        
+}
 .practice-area-list li a{
+    display: block;
     color: black;
 }
 .practice-area-list li a:hover,:active{
